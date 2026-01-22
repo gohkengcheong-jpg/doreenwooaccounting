@@ -1,52 +1,242 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-SG">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>[Your Firm Name] | Accounting for Small Businesses in Singapore</title>
-  <meta name="description" content="CPA-led bookkeeping, GST support, and year-end accounts for small businesses in Singapore. Free 15-minute consult." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doreen Woo Accounting | Accounting for Small Businesses in Singapore</title>
+  <meta name="description" content="Doreen Woo Accounting provides bookkeeping, GST support, payroll, and year-end accounts & tax support for small businesses in Singapore. Contact via WhatsApp or email." />
+
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#0f1b33;
-      --text:#e8eefc;
-      --muted:#b8c3df;
-      --accent:#4aa3ff;
-      --accent2:#22c55e;
-      --border:rgba(255,255,255,.12);
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius:16px;
-      --max: 1060px;
-      --pad: 20px;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#4b5563;
+      --border:#e5e7eb;
+      --shadow: 0 10px 28px rgba(0,0,0,.08);
+      --radius: 16px;
+      --max: 980px;
+      --blue:#1a73e8;
+      --green:#25D366;
     }
-    body{ margin:0; background: radial-gradient(1200px 600px at 20% -10%, rgba(74,163,255,.35), transparent 55%),
-                       radial-gradient(900px 500px at 110% 10%, rgba(34,197,94,.25), transparent 50%),
-                       var(--bg);
-          color:var(--text); }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.55;
+      color:var(--text);
+      background: radial-gradient(900px 520px at 20% -10%, rgba(26,115,232,.15), transparent 60%),
+                  radial-gradient(900px 520px at 100% 0%, rgba(37,211,102,.12), transparent 55%),
+                  var(--bg);
+    }
     a{ color:inherit; text-decoration:none; }
-    .wrap{ max-width:var(--max); margin:0 auto; padding: 36px var(--pad) 60px; }
-    .nav{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
-    .brand{ font-weight:800; letter-spacing:.2px; }
-    .pill{ display:inline-flex; gap:8px; align-items:center; padding:10px 14px; border:1px solid var(--border);
-           border-radius:999px; background: rgba(255,255,255,.06); }
-    .hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap:22px; margin-top:28px; align-items:stretch; }
-    .card{ background: rgba(255,255,255,.06); border:1px solid var(--border); border-radius:var(--radius);
-           box-shadow: var(--shadow); padding: 22px; }
-    h1{ margin:0 0 10px; font-size: clamp(30px, 4vw, 46px); line-height:1.05; }
-    .sub{ color:var(--muted); font-size: 16px; line-height:1.55; margin:0 0 18px; }
-    .ctaRow{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
-    .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px;
-          padding:12px 16px; border-radius: 12px; border:1px solid var(--border);
-          background: rgba(255,255,255,.07); font-weight:700; }
-    .btn.primary{ background: linear-gradient(135deg, rgba(74,163,255,.95), rgba(74,163,255,.65));
-                  border-color: rgba(74,163,255,.65); }
-    .btn.green{ background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(34,197,94,.60));
-                border-color: rgba(34,197,94,.55); }
-    .mini{ color:var(--muted); font-size: 13px; margin-top:10px; }
-    .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
-    .k{ font-weight:800; }
-    .muted{ color:var(--muted); }
-    .section{ margin-top: 18px; }
-    .h2{ font-size: 18px; font-weight: 900; margin:0 0 10px; }
-    ul{ margin:0; padding-left: 18px; color:var(-
+    .wrap{ max-width: var(--max); margin:0 auto; padding: 28px 18px 56px; }
+
+    .top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      margin-bottom:14px;
+    }
+    .brand{
+      font-weight:900;
+      letter-spacing:.2px;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border:1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,.7);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hero{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height:1.05;
+    }
+    .sub{
+      margin:0 0 16px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .ctaRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 10px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius: 12px;
+      border:1px solid var(--border);
+      background:#fff;
+      font-weight:800;
+      min-width: 220px;
+    }
+    .btn.blue{
+      background: var(--blue);
+      border-color: var(--blue);
+      color:#fff;
+    }
+    .btn.green{
+      background: var(--green);
+      border-color: var(--green);
+      color:#fff;
+    }
+    .note{
+      margin-top:10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 6px 18px rgba(0,0,0,.06);
+      padding: 18px;
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size: 18px;
+    }
+    ul{
+      margin:0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    li{ margin: 6px 0; }
+
+    .faq details{
+      border:1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,.75);
+      padding: 12px 14px;
+    }
+    .faq details + details{ margin-top: 10px; }
+    .faq summary{ cursor:pointer; font-weight:900; }
+    .faq p{ margin:10px 0 0; color: var(--muted); }
+
+    .footer{
+      margin-top: 16px;
+      text-align:center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px){
+      .grid{ grid-template-columns: 1fr; }
+      .btn{ width: 100%; min-width: 0; }
+      .top{ flex-direction:column; align-items:flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">Doreen Woo Accounting</div>
+      <div class="tag">📍 Singapore • Small business support</div>
+    </div>
+
+    <section class="hero">
+      <h1>Accounting made simple for small businesses.</h1>
+      <p class="sub">
+        Bookkeeping, GST support, payroll, and year-end accounts & tax support — explained clearly and handled on time.
+        Best for newly incorporated companies and micro SMEs.
+      </p>
+
+      <div class="ctaRow">
+        <a class="btn green" href="https://wa.me/6597397259" target="_blank" rel="noopener">
+          💬 WhatsApp: +65 9739 7259
+        </a>
+        <a class="btn blue" href="mailto:doreenwoo87@gmail.com?subject=Accounting%20Enquiry%20-%20Doreen%20Woo%20Accounting&body=Hi%20Doreen%2C%0A%0AI'm%20looking%20for%20help%20with%3A%0A-%20%0A%0ABusiness%20type%3A%20%0AGST-registered%3F%20(Yes%2FNo%2FNot%20sure)%0AApprox.%20transactions%2Fmonth%3A%20%0A%0AThanks%2C%0A" >
+          ✉️ Email: doreenwoo87@gmail.com
+        </a>
+      </div>
+
+      <div class="note">No pricing on the site — message me and I’ll ask a few questions, then share a clear scope and quote.</div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Who I help</h2>
+        <ul>
+          <li>Newly incorporated companies (0–2 years)</li>
+          <li>Micro SMEs (1–10 staff)</li>
+          <li>Service businesses & small teams</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Services</h2>
+        <ul>
+          <li>Monthly bookkeeping</li>
+          <li>GST registration & filing support</li>
+          <li>Payroll support (small teams)</li>
+          <li>Year-end accounts & tax support</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>How it works</h2>
+        <ul>
+          <li>1) You WhatsApp/email me with your needs</li>
+          <li>2) I’ll ask a few quick questions (volume, GST, payroll)</li>
+          <li>3) You get a clear scope + quote + onboarding checklist</li>
+        </ul>
+      </div>
+
+      <div class="card faq">
+        <h2>FAQ</h2>
+
+        <details>
+          <summary>Do you work with newly incorporated companies?</summary>
+          <p>Yes — I can help you set up a clean bookkeeping process and keep you compliant from the start.</p>
+        </details>
+
+        <details>
+          <summary>I’m not sure if I need GST registration — can you advise?</summary>
+          <p>Yes. We can review your revenue outlook and business model, then decide the best next step.</p>
+        </details>
+
+        <details>
+          <summary>How do we start?</summary>
+          <p>Just WhatsApp or email me. I’ll reply with a short checklist and next steps.</p>
+        </details>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> Doreen Woo Accounting • Singapore
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
